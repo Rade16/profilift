@@ -2,12 +2,256 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style-type: none;
+  color: #474a4d;
+  font-family: "Inter", serif;
 }
+
 .header {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 70px;
   background: #2b2f33;
   &__container {
+    color: #fff;
     width: 1200px;
+    margin: 0 auto;
+  }
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-logo {
+      color: #fff;
+    }
+    &-list {
+      display: flex;
+      gap: 20px;
+      &-item {
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+    &-tel {
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+      &-number {
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.welcome {
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  width: 1200px;
+  &__block {
+    padding: 30px;
+    border-radius: 15px 0 0 15px;
+    width: 40%;
+
+    background: #474a4d;
+    &-header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding-bottom: 10px;
+      &-image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        background: url(./assets/elevator.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &-info {
+        width: 190px;
+      }
+      &-name {
+        font-size: 20px;
+        color: #fff;
+      }
+      &-position {
+        color: #fff;
+      }
+    }
+    &-text-indent {
+      font-style: italic;
+      line-height: 130%;
+      text-indent: 20px;
+      color: #b4bcc5;
+    }
+  }
+  &__image {
+    border-radius: 0px 15px 15px 0px;
+    width: 60%;
+    height: 500px;
+    background: url(./assets/elevator.png);
+
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.about {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__text-line {
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    &-block {
+      width: 450px;
+      &-title {
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      &-list {
+        list-style: inside;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        &-item {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          gap: 10px;
+          &::before {
+            content: "•";
+
+            font-size: 1.5em;
+            color: #474a4d;
+          }
+        }
+      }
+    }
+  }
+}
+
+.portfolio {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__title {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &__image-line {
+    animation: marquee 10s linear infinite;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  &__image-line1 {
+    margin-left: -60px;
+    animation: marquee 10s linear infinite;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+}
+
+.feedback {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__title {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &__comment-line {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &-block {
+      padding: 15px;
+      width: 320px;
+      height: 195px;
+      background: #474a4d;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &-header {
+        &-name {
+          color: #fff;
+        }
+        &-date {
+          color: #8a8a8a;
+        }
+      }
+      &-text {
+        color: #fff;
+      }
+    }
+  }
+}
+.footer {
+  font-size: 12px;
+  padding: 30px;
+  background: #2b2f33;
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    color: #fff;
+  }
+  &__nav {
+    gap: 20px;
+    &-subtitle {
+      font-weight: 600;
+      color: #fff;
+    }
+    &-list {
+      &-item {
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  &__contact {
+    width: 280px;
+    &-subtitle {
+      font-weight: 600;
+      color: #fff;
+    }
+    &-list {
+      &-item {
+        color: #fff;
+        &-span {
+          color: #bdbdbd;
+        }
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0); /* Начинаем с первого элемента */
+  }
+  100% {
+    transform: translateX(calc(-100% / 2)); /* Заканчиваем ровно на середине, чтобы первый элемент был виден снова */
   }
 }

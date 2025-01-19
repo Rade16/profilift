@@ -10,19 +10,21 @@
       rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <script src="./scripts.js" defer></script>
-    <title>Document</title>
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+
+    <title>Profi-Lift</title>
   </head>
   <body>
     <header class="header">
       <div class="header__container">
         <nav class="header__navigation">
-          <h1 class="header__navigation-logo">ПРОФИ-ЛИФТ</h1>
+          <img src="./assets/logo.svg" alt="">
           <ul class="header__navigation-list">
-            <li class="header__navigation-list-item">О нас</li>
-            <li class="header__navigation-list-item">Контакты</li>
-            <li class="header__navigation-list-item">Услуги</li>
-            <li class="header__navigation-list-item">Портфолио</li>
-            <li class="header__navigation-list-item">Отзывы</li>
+            <li class="header__navigation-list-item"><a href="#about"">О нас</a></li>
+            <li class="header__navigation-list-item"><a href="#services">Услуги</a></li>
+            <li class="header__navigation-list-item"><a href="#portfolio">Портфолио</a></li>
+            <li class="header__navigation-list-item"><a href="#feedback">Отзывы</a></li>
+            <li class="header__navigation-list-item"><a href="#contacts">Контакты</a></li>
           </ul>
           <div class="header__navigation-tel">
             <a class="header__navigation-tel-number" href="tel:+79933435203">+7
@@ -38,7 +40,7 @@
         <div class="welcome__block">
           <div class="welcome__block-header">
             <img src="./assets/human.png"
-              class="welcome__block-header-image">
+              class="welcome__block-header-image" >
             <div class="welcome__block-header-info">
               <p class="welcome__block-header-name">Юрий Николаевич Шмоткин</p>
               <p class="welcome__block-header-position">Генеральный директор</p>
@@ -71,7 +73,7 @@
         </div>
         <div class="welcome__image"></div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <h1 class="about__title">О нас</h1>
         <div class="about__text-line">
           <div class="about__text-line-block">
@@ -115,7 +117,7 @@
             </ul>
           </div>
         </div>
-        <div class="about__text-line">
+        <div class="about__text-line" id="services">
           <div class="about__text-line-block">
             <h1 class="about__text-line-block-title">Услуги:</h1>
             <ul class="about__text-line-block-list">
@@ -183,23 +185,149 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <h1 class="portfolio__title">Наши работы: </h1>
-        <div class="portfolio__image-line" id="imageContainer"></div>
-        <div class="portfolio__image-line1" id="imageContainer1"></div>
-      </section>
-      <section class="feedback">
-        <h1 class="feedback__title">Ваши отзывы: </h1>
-        <div class="feedback__comment-line">
-          <div class="feedback__comment-line-block">
-            <div class="feedback__comment-line-block-header">
-              <p class="feedback__comment-line-block-header-name">Иванов Алексей
-                Сергеевич</p>
-              <p class="feedback__comment-line-block-header-date">12.01.2025</p>
+        <div class="portfolio__image-slider">
+          <div class="portfolio__image-line" id="imageContainer"></div>
+          
+            <img class="portfolio__left-arrow" id="leftArrowImageSlider" src="./assets/icons/leftArrow.svg" alt>
+            <img class="portfolio__right-arrow" id="rightArrowImageSlider"
+              src="./assets/icons/rightArrow.svg" alt>
+
+          </div>
+        </section>
+        <section class="feedback" id="feedback">
+          <h1 class="feedback__title">Ваши отзывы: </h1>
+          <div class="feedback__comment-slider">
+            <div class="feedback__comment-line" id="commentContainer">
+              <div class="feedback__comment-line-block">
+                <div class="feedback__comment-line-block-header">
+                  <p class="feedback__comment-line-block-header-name">Иванов
+                    Алексей
+                    Сергеевич</p>
+                  <p
+                    class="feedback__comment-line-block-header-date">12.01.2025</p>
+                </div>
+                <p class="feedback__comment-line-block-text">Отличная работа!
+                  Компания 'Профи-Лифт' показала высокий профессионализм и
+                  оперативность. Спасибо за сотрудничество!</p>
+              </div>
+              <div class="feedback__comment-line-block">
+                <div class="feedback__comment-line-block-header">
+                  <p class="feedback__comment-line-block-header-name">Иванов
+                    Алексей
+                    Сергеевич</p>
+                  <p
+                    class="feedback__comment-line-block-header-date">12.01.2025</p>
+                </div>
+                <p class="feedback__comment-line-block-text">Отличная работа!
+                  Компания 'Профи-Лифт' показала высокий профессионализм и
+                  оперативность. Спасибо за сотрудничество!</p>
+              </div>
+              <div class="feedback__comment-line-block">
+                <div class="feedback__comment-line-block-header">
+                  <p class="feedback__comment-line-block-header-name">Иванов
+                    Алексей
+                    Сергеевич</p>
+                  <p
+                    class="feedback__comment-line-block-header-date">12.01.2025</p>
+                </div>
+                <p class="feedback__comment-line-block-text">Отличная работа!
+                  Компания 'Профи-Лифт' показала высокий профессионализм и
+                  оперативность. Спасибо за сотрудничество!</p>
+              </div>
+              <div class="feedback__comment-line-block">
+                <div class="feedback__comment-line-block-header">
+                  <p class="feedback__comment-line-block-header-name">Иванов
+                    Алексей
+                    Сергеевич</p>
+                  <p
+                    class="feedback__comment-line-block-header-date">12.01.2025</p>
+                </div>
+                <p class="feedback__comment-line-block-text">Отличная работа!
+                  Компания 'Профи-Лифт' показала высокий профессионализм и
+                  оперативность. Спасибо за сотрудничество!</p>
+              </div>
+              <div class="feedback__comment-line-block">
+                <div class="feedback__comment-line-block-header">
+                  <p class="feedback__comment-line-block-header-name">Иванов
+                    Алексей
+                    Сергеевич</p>
+                  <p
+                    class="feedback__comment-line-block-header-date">12.01.2025</p>
+                </div>
+                <p class="feedback__comment-line-block-text">Отличная работа!
+                  Компания 'Профи-Лифт' показала высокий профессионализм и
+                  оперативность. Спасибо за сотрудничество!</p>
+              </div>
+              <div class="feedback__comment-line-block">
+                <div class="feedback__comment-line-block-header">
+                  <p class="feedback__comment-line-block-header-name">Иванов
+                    Алексей
+                    Сергеевич</p>
+                  <p
+                    class="feedback__comment-line-block-header-date">12.01.2025</p>
+                </div>
+                <p class="feedback__comment-line-block-text">Отличная работа!
+                  Компания 'Профи-Лифт' показала высокий профессионализм и
+                  оперативность. Спасибо за сотрудничество!</p>
+              </div>
+              <div class="feedback__comment-line-block">
+                <div class="feedback__comment-line-block-header">
+                  <p class="feedback__comment-line-block-header-name">Иванов
+                    Алексей
+                    Сергеевич</p>
+                  <p
+                    class="feedback__comment-line-block-header-date">12.01.2025</p>
+                </div>
+                <p class="feedback__comment-line-block-text">Отличная работа!
+                  Компания 'Профи-Лифт' показала высокий профессионализм и
+                  оперативность. Спасибо за сотрудничество!</p>
+              </div>
+              <div class="feedback__comment-line-block">
+                <div class="feedback__comment-line-block-header">
+                  <p class="feedback__comment-line-block-header-name">Иванов
+                    Алексей
+                    Сергеевич</p>
+                  <p
+                    class="feedback__comment-line-block-header-date">12.01.2025</p>
+                </div>
+                <p class="feedback__comment-line-block-text">Отличная работа!
+                  Компания 'Профи-Лифт' показала высокий профессионализм и
+                  оперативность. Спасибо за сотрудничество!</p>
+              </div>
+              <div class="feedback__comment-line-block">
+                <div class="feedback__comment-line-block-header">
+                  <p class="feedback__comment-line-block-header-name">Иванов
+                    Алексей
+                    Сергеевич</p>
+                  <p
+                    class="feedback__comment-line-block-header-date">12.01.2025</p>
+                </div>
+                <p class="feedback__comment-line-block-text">Отличная работа!
+                  Компания 'Профи-Лифт' показала высокий профессионализм и
+                  оперативность. Спасибо за сотрудничество!</p>
+              </div>
+              <div class="feedback__comment-line-block">
+                <div class="feedback__comment-line-block-header">
+                  <p class="feedback__comment-line-block-header-name">Иванов
+                    Алексей
+                    Сергеевич</p>
+                  <p
+                    class="feedback__comment-line-block-header-date">12.01.2025</p>
+                </div>
+                <p class="feedback__comment-line-block-text">Отличная работа!
+                  Компания 'Профи-Лифт' показала высокий профессионализм и
+                  оперативность. Спасибо за сотрудничество!</p>
+              </div>
             </div>
-            <p class="feedback__comment-line-block-text">Отличная работа!
-              Компания 'Профи-Лифт' показала высокий профессионализм и
-              оперативность. Спасибо за сотрудничество!</p>
+
+            <img  class="feedback__left-arrow" id="leftArrowCommentSlider" 
+            src="./assets/icons/leftArrow.svg" alt>
+
+            <img class="feedback__right-arrow" id="rightArrowCommentSlider"
+              src="./assets/icons/rightArrow.svg" alt>
+
           </div>
         </div>
 
@@ -207,29 +335,31 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <h1 class="footer__title">ПРОФИ-ЛИФТ</h1>
-        <div class="footer__nav">
+        <img src="./assets/logo.svg" class="footer__title" alt="">
+       
+        <div class="footer__nav"> 
           <p class="footer__nav-subtitle">Навигация</p>
           <ul class="footer__nav-list">
-            <li class="footer__nav-list-item">О нас</li>
-            <li class="footer__nav-list-item">Контакты</li>
-            <li class="footer__nav-list-item">Услуги</li>
-            <li class="footer__nav-list-item">Отзывы</li>
-            <li class="footer__nav-list-item">Портфолио</li>
+            <li  class="footer__nav-list-item"><a href="#about">О нас</a></li>
+            <li class="footer__nav-list-item"><a href="#services">Услуги</a></li>
+            <li class="footer__nav-list-item"><a href="#portfolio">Портфолио</a></li>
+            <li class="footer__nav-list-item"><a href="#feedback">Отзывы</a></li>
+            <li class="footer__nav-list-item"><a href="#contacts">Контакты</a></li>
           </ul>
         </div>
         <div class="footer__contact">
-          <p class="footer__contact-subtitle">Контакты:</p>
+          <p class="footer__contact-subtitle" id="contacts">Контакты:</p>
           <ul class="footer__contact-list">
             <li class="footer__contact-list-item">Телефон: <span
-                class="footer__contact-list-item-span">+7 (993) 343 52
-                03</span>
+                class="footer__contact-list-item-span"><a href="tel:+79933435203">+7 (993) 343 52
+                03</a></span>
             </li>
             <li class="footer__contact-list-item">Почта: <span
-                class="footer__contact-list-item-span">obslugaprofilift@yandex.ru</span>
+                class="footer__contact-list-item-span">
+                <a href="mailto:obslugaprofilift@yandex.ru">obslugaprofilift@yandex.ru</a></span>
             </li>
             <li class="footer__contact-list-item">Telegram: <span
-                class="footer__contact-list-item-span">https://t.me/ProfiLift</span>
+                class="footer__contact-list-item-span"><a href="https://t.me/ProfiLift" target="_blank">https://t.me/ProfiLift</a></span>
             </li>
             <li class="footer__contact-list-item">Адрес: <br> <span
                 class="footer__contact-list-item-span">142118, Московская обл.,
@@ -239,34 +369,35 @@
 
           </ul>
         </div>
-        <div class="footer__contact">
-          <p class="footer__contact-subtitle">Реквизиты:</p>
-          <ul class="footer__contact-list">
-            <li class="footer__contact-list-item">ИНН/КПП:
+        <div class="footer__details">
+          <p class="footer__details-subtitle">Реквизиты:</p>
+          <ul class="footer__details-list">
+            <li class="footer__details-list-item">ИНН/КПП:
               <span
-                class="footer__contact-list-item-span">9725036628
+                class="footer__details-list-item-span">9725036628
               </span>
             </li>
-            <li class="footer__contact-list-item">ОГРН:
+            <li class="footer__details-list-item">ОГРН:
               <span
-                class="footer__contact-list-item-span">1207700352848
+                class="footer__details-list-item-span">1207700352848
               </span>
             </li>
-            <li class="footer__contact-list-item">Расчетный счет: <span
-                class="footer__contact-list-item-span">40702810302490003844</span>
+            <li class="footer__details-list-item">Расчетный счет: <span
+                class="footer__details-list-item-span">40702810302490003844</span>
             </li>
-            <li class="footer__contact-list-item">Корр. счет: <span
-                class="footer__contact-list-item-span">30101810200000000593</span>
+            <li class="footer__details-list-item">Корр. счет: <span
+                class="footer__details-list-item-span">30101810200000000593</span>
             </li>
-            <li class="footer__contact-list-item">БИК: <span
-                class="footer__contact-list-item-span">044525593</span>
+            <li class="footer__details-list-item">БИК: <span
+                class="footer__details-list-item-span">044525593</span>
             </li>
-            <li class="footer__contact-list-item">ОКПО: <span
-                class="footer__contact-list-item-span">45738737</span>
+            <li class="footer__details-list-item">ОКПО: <span
+                class="footer__details-list-item-span">45738737</span>
             </li>
 
           </ul>
-        </div>
+       
+      </div>
       </div>
     </footer>
   </body>

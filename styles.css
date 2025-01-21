@@ -374,23 +374,23 @@ body {
   color: #bdbdbd;
 }
 
-.admin {
+.login {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.admin__title {
+.login__title {
   font-size: 24px;
   font-weight: 500;
   text-align: center;
   margin-bottom: 10px;
 }
-.admin__form {
+.login__form {
   width: 350px;
   margin: 0 auto;
 }
-.admin__form-input {
+.login__form-input {
   display: block;
   width: 350px;
   height: 40px;
@@ -398,4 +398,136 @@ body {
   border: solid 1px #e7e7e7;
   margin-bottom: 10px;
   padding-left: 10px;
+}
+.login__form-button {
+  display: block;
+  width: 350px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  background: #0d677f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.admin__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.admin__add-images-container {
+  display: flex;
+  justify-content: space-between;
+}
+.admin__add-images-title {
+  margin-bottom: 20px;
+}
+.admin__add-images-form {
+  width: 230px;
+}
+.admin__add-images-form-label {
+  display: block;
+  width: 230px;
+  height: 360px;
+  border-radius: 15px;
+  border: 1px solid #474a4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin__add-images-form-input {
+  display: none;
+}
+.admin__add-images-form-icon {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+.admin__add-images-form-button {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  background: #0d677f;
+  color: #fff;
+  cursor: pointer;
+}
+.admin__add-images-list {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 710px;
+  height: 360px;
+  background: #f2f2f2;
+  border-radius: 15px;
+}
+.admin__add-images-list-item {
+  width: 93px;
+  height: 145px;
+}
+.admin__add-comments-container {
+  display: flex;
+  justify-content: space-between;
+}
+.admin__add-comments-title {
+  margin-bottom: 20px;
+}
+.admin__add-comments-form {
+  width: 385px;
+  height: 45px;
+}
+.admin__add-comments-form-label {
+  display: block;
+  width: 230px;
+  height: 360px;
+  border-radius: 15px;
+  border: 1px solid #474a4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin__add-comments-form-input {
+  display: none;
+}
+.admin__add-comments-form-icon {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+.admin__add-comments-form-button {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  background: #0d677f;
+  color: #fff;
+  cursor: pointer;
+}
+.admin__add-comments-list {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 710px;
+  height: 360px;
+  background: #f2f2f2;
+  border-radius: 15px;
+}
+.admin__add-comments-list-item {
+  width: 93px;
+  height: 145px;
 }/*# sourceMappingURL=styles.css.map */

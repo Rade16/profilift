@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet">
+    <title> Админ панель</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./js/admin.js" defer></script>
+  </head>
+  <body>
+    <div class="admin__container">
+      <div class="admin__add-images">
+        <h1 class="admin__add-images-title">Добавить изображение</h2>
+        <div class="admin__add-images-container">
+          <form action class="admin__add-images-form">
+            <label for="addImage" class="admin__add-images-form-label">
+              <input type="file" accept="image/*"
+                class="admin__add-images-form-input" id="addImage">
+              <img src="./assets/icons/add.svg" alt
+                class="admin__add-images-form-icon">
+            </label>
+            <button class="admin__add-images-form-button"
+              type="submit">Добавить</button>
+          </form>
+          <div class="admin__add-images-list" id="imageList">
+
+          </div>
+        </div>
+      </div>
+      <div class="admin__add-comments">
+        <h1 class="admin__add-comments-title">Добавить отзыв</h2>
+        <div class="admin__add-comments-container">
+          <form action class="admin__add-comments-form">
+            <input type="text" placeholder="Имя"
+              class="admin__add-comments-form-input">
+            <input type="date" placeholder="Дата"
+              class="admin__add-comments-form-input">
+            <textarea name id
+              class="admin__add-comments-form-textarea"
+              placeholder="Отзыв заказчика"></textarea>
+            <button class="admin__add-comments-form-button"
+              type="submit">Добавить</button>
+          </form>
+          <div class="admin__add-comments-list" id="commentList">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

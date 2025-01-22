@@ -10,15 +10,20 @@
       rel="stylesheet">
     <title> Админ панель</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./js/admin.js" defer></script>
+    <!-- <script src="./js/admin.js" defer></script> -->
+    <script src="./api/imageAPI.js" defer></script>
+    <script src="./api/commentAPI.js" defer></script>
   </head>
   <body>
     <div class="admin__container">
       <div class="admin__add-images">
         <h1 class="admin__add-images-title">Добавить изображение</h2>
         <div class="admin__add-images-container">
-          <form action class="admin__add-images-form">
-            <label for="addImage" class="admin__add-images-form-label">
+          <form class="admin__add-images-form" id="addImageForm">
+            <label for="addImage" class="admin__add-images-form-label"
+              id="previewContainer">
+              <img src id="imagePreview"
+                class="admin__add-images-form-image">
               <input type="file" accept="image/*"
                 class="admin__add-images-form-input" id="addImage">
               <img src="./assets/icons/add.svg" alt
@@ -35,14 +40,14 @@
       <div class="admin__add-comments">
         <h1 class="admin__add-comments-title">Добавить отзыв</h2>
         <div class="admin__add-comments-container">
-          <form action class="admin__add-comments-form">
+          <form action class="admin__add-comments-form" id="addCommentForm">
             <input type="text" placeholder="Имя"
-              class="admin__add-comments-form-input">
+              class="admin__add-comments-form-input" id="formName">
             <input type="date" placeholder="Дата"
-              class="admin__add-comments-form-input">
-            <textarea name id
+              class="admin__add-comments-form-input" id="formDate">
+            <textarea
               class="admin__add-comments-form-textarea"
-              placeholder="Отзыв заказчика"></textarea>
+              placeholder="Отзыв заказчика" id="formComment"></textarea>
             <button class="admin__add-comments-form-button"
               type="submit">Добавить</button>
           </form>

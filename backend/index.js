@@ -8,12 +8,18 @@ const router = require("./routes/index");
 const path = require("path");
 
 const app = express();
-app.use("/covers", express.static(path.join(__dirname, "public", "covers")));
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.use(express.json());
-app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/api", router);
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 const start = async () => {
   try {
     await sequelize.authenticate();

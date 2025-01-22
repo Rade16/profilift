@@ -6,7 +6,9 @@ class ImageController {
     res.json(images);
   }
   async create(req, res) {
-    const { url } = req.body;
+    const url = req.file
+      ? `http://localhost:3000/uploads/${req.file.filename}`
+      : null;
     const image = await Image.create({ url });
     res.json(image);
   }

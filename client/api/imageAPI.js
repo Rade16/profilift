@@ -26,7 +26,7 @@ document
 
       const data = await response.json();
       console.log(data);
-      alert("Изображение успешно загружено!");
+      // alert("Изображение успешно загружено!");
     } catch (error) {
       console.error("Ошибка загрузки:", error);
       alert("Не удалось загрузить изображение");
@@ -79,9 +79,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
       });
 
+      imageListElement.appendChild(imageElement);
       imageElement.appendChild(img);
       imageElement.appendChild(deleteButton);
-      imageListElement.appendChild(imageElement);
     });
   } catch (error) {
     console.error("Ошибка загрузки изображений:", error);
@@ -110,3 +110,5 @@ document
       imagePreview.style.display = "none"; // Скрываем предварительный просмотр, если файл не выбран
     }
   });
+
+  

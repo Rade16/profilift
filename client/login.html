@@ -9,14 +9,17 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet">
+    <script src="./api/userAPI.js" defer></script>
     <title>Вход</title>
 
   </head>
   <body class="login">
-    <form action class="login__form">
+    <form action="/login" method="post" class="login__form">
       <h1 class="login__title">Админ-панель</h1>
-      <input type="text" placeholder="Логин" class="login__form-input">
-      <input type="text" placeholder="Пароль" class="login__form-input">
+      <input type="text" name="username" placeholder="Логин"
+        class="login__form-input">
+      <input type="text" name="password" placeholder="Пароль"
+        class="login__form-input">
       <button class="login__form-button" type="submit">Войти</button>
     </form>
   </body>

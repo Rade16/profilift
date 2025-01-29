@@ -415,6 +415,9 @@ body {
   cursor: pointer;
 }
 
+.admin {
+  padding-bottom: 100px;
+}
 .admin__container {
   width: 1200px;
   margin: 0 auto;

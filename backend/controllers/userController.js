@@ -8,7 +8,7 @@ const generateAccessToken = (id, username) => {
     id,
     username,
   };
-  return jwt.sign(payload, process.env.SECRET_KEY, { expiresIn: "24h" });
+  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "24h" });
 };
 
 class UserController {

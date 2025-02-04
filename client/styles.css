@@ -269,6 +269,16 @@ body {
 }
 .feedback__comment-line-block-text {
   color: #fff;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.feedback__comment-line-block-text::-webkit-scrollbar {
+  width: 5px;
+  background: #474a4d;
+}
+.feedback__comment-line-block-text::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 10px;
 }
 .feedback__left-arrow {
   position: absolute;
@@ -354,7 +364,18 @@ body {
 .footer__contact-list-item {
   color: #fff;
 }
+.footer__contact-list-item-div {
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
 .footer__contact-list-item-span {
+  color: #bdbdbd;
+}
+.footer__contact-list-item-span-address {
+  display: block;
+  margin-top: 3px;
   color: #bdbdbd;
 }
 .footer__details {

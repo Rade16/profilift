@@ -71,6 +71,8 @@ body {
   display: flex;
   width: 1200px;
   &__block {
+    box-sizing: border-box;
+    height: 510px;
     padding: 30px;
     border-radius: 15px 0 0 15px;
     width: 40%;
@@ -115,9 +117,10 @@ body {
     }
   }
   &__image {
+    display: block;
     border-radius: 0px 15px 15px 0px;
     width: 60%;
-    height: 500px;
+    height: 510px;
     background: url(./assets/elevator.png);
 
     background-size: cover;
